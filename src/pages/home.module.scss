@@ -1,1 +1,59 @@
-// TODO
+.content {
+  button {
+    color: var(--pink);
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 64px;
+    border: none;
+    background: transparent;
+    transition: filter 0.2s;
+  }
+
+  button:hover {
+    filter: brightness(80%);
+    cursor: pointer;
+  }
+
+  article + article {
+    margin-top: 46px;
+  }
+}
+
+.post {
+  width: 700px;
+  min-height: 108px;
+
+  h1 {
+    width: 100%;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 28px;
+  }
+
+  p {
+    color: var(--gray);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: justify;
+    margin: 5px 0 24px;
+  }
+
+  .info {
+    width: 265px;
+    color: var(--gray);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    div {
+      display: flex;
+
+      p {
+        font-size: 14px;
+        margin: 0 0 0 8px;
+      }
+    }
+  }
+}
